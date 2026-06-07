@@ -3,68 +3,83 @@
 @tailwind utilities;
 
 /* תיכון מל"ד — Design System
-   Warm ivory base, deep blue, gentle green, soft earth, muted mustard.
-   All colors in HSL. */
+   Warm, calming palette. Single font: Assistant.
+   Red (#E81820) used ONLY as a tiny heart accent. */
 
 @layer base {
   :root {
-    --background: 40 35% 97%;          /* warm ivory */
-    --foreground: 215 35% 18%;         /* deep ink */
+    /* Neutrals */
+    --background: 42 44% 96%;          /* #FAF8F2 warm white */
+    --foreground: 0 0% 7%;             /* #111111 */
 
     --card: 0 0% 100%;
-    --card-foreground: 215 35% 18%;
+    --card-foreground: 0 0% 7%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 35% 18%;
+    --popover-foreground: 0 0% 7%;
 
-    /* Deep, trustworthy blue */
-    --primary: 213 55% 28%;
-    --primary-foreground: 40 35% 97%;
-    --primary-soft: 213 45% 92%;
+    /* Cream / sand surfaces */
+    --cream: 33 56% 93%;               /* #F7EFE3 */
+    --sand: 33 41% 85%;                /* #EADCC8 */
+    --peach: 19 73% 84%;               /* #F4CDB8 */
+    --clay: 11 51% 74%;                /* #DFA89A */
 
-    /* Gentle olive-green */
-    --secondary: 96 22% 42%;
-    --secondary-foreground: 40 35% 97%;
-    --secondary-soft: 96 30% 92%;
+    /* Greens */
+    --sage: 106 14% 68%;               /* #A8B8A3 */
+    --olive: 84 21% 77%;               /* #C6D0B8 */
 
-    --muted: 38 25% 93%;
-    --muted-foreground: 215 15% 40%;
+    /* Blues */
+    --sky-soft: 198 41% 70%;           /* #9DB7C4 */
+    --sky-pale: 196 47% 90%;           /* #DCEBF0 */
 
-    /* Warm earth */
-    --accent: 24 35% 88%;
-    --accent-foreground: 215 35% 18%;
+    /* Brand semantic — primary = sage green (calming, hopeful) */
+    --primary: 106 14% 45%;
+    --primary-foreground: 42 44% 96%;
+    --primary-soft: 84 25% 88%;
 
-    /* Mustard highlight */
-    --highlight: 38 75% 55%;
-    --highlight-foreground: 215 35% 18%;
+    /* Secondary = calm blue-gray */
+    --secondary: 198 25% 50%;
+    --secondary-foreground: 42 44% 96%;
+    --secondary-soft: 196 47% 92%;
 
-    --destructive: 0 65% 45%;
-    --destructive-foreground: 40 35% 97%;
+    --muted: 33 56% 93%;               /* cream */
+    --muted-foreground: 0 0% 29%;      /* #4B4B4B */
 
-    --border: 38 20% 86%;
-    --input: 38 20% 86%;
-    --ring: 213 55% 28%;
+    --accent: 19 73% 88%;              /* peach */
+    --accent-foreground: 0 0% 7%;
+
+    /* Tiny accent only — heart red */
+    --highlight: 358 81% 50%;          /* #E81820 */
+    --highlight-foreground: 0 0% 100%;
+
+    --destructive: 358 81% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 33 35% 85%;
+    --input: 33 35% 85%;
+    --ring: 106 14% 45%;
 
     --radius: 1rem;
 
-    --gradient-warm: linear-gradient(135deg, hsl(40 50% 96%), hsl(24 45% 92%));
-    --gradient-hero: linear-gradient(160deg, hsl(213 45% 96%) 0%, hsl(40 50% 96%) 60%, hsl(96 30% 94%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(213 55% 32%), hsl(213 55% 22%));
+    --gradient-warm: linear-gradient(135deg, hsl(33 56% 95%), hsl(19 60% 92%));
+    --gradient-hero: linear-gradient(160deg, hsl(196 47% 93%) 0%, hsl(42 44% 96%) 55%, hsl(84 25% 90%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(106 18% 50%), hsl(106 14% 40%));
+    --gradient-calm: linear-gradient(160deg, hsl(196 47% 92%) 0%, hsl(33 56% 95%) 60%, hsl(84 25% 90%) 100%);
 
-    --shadow-soft: 0 4px 24px -8px hsl(215 35% 18% / 0.08);
-    --shadow-card: 0 10px 40px -16px hsl(213 55% 28% / 0.18);
-    --shadow-warm: 0 8px 30px -10px hsl(24 45% 50% / 0.15);
+    --shadow-soft: 0 4px 24px -8px hsl(0 0% 7% / 0.08);
+    --shadow-card: 0 10px 40px -16px hsl(106 14% 30% / 0.18);
+    --shadow-warm: 0 8px 30px -10px hsl(19 50% 50% / 0.15);
 
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-background: 40 35% 97%;
-    --sidebar-foreground: 215 35% 18%;
-    --sidebar-primary: 213 55% 28%;
-    --sidebar-primary-foreground: 40 35% 97%;
-    --sidebar-accent: 38 25% 93%;
-    --sidebar-accent-foreground: 215 35% 18%;
-    --sidebar-border: 38 20% 86%;
-    --sidebar-ring: 213 55% 28%;
+    --sidebar-background: 42 44% 96%;
+    --sidebar-foreground: 0 0% 7%;
+    --sidebar-primary: 106 14% 45%;
+    --sidebar-primary-foreground: 42 44% 96%;
+    --sidebar-accent: 33 56% 93%;
+    --sidebar-accent-foreground: 0 0% 7%;
+    --sidebar-border: 33 35% 85%;
+    --sidebar-ring: 106 14% 45%;
   }
 }
 
@@ -76,14 +91,20 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-feature-settings: "kern", "liga";
+    line-height: 1.75;
+    letter-spacing: 0.005em;
   }
 
   h1, h2, h3, h4 {
-    @apply font-display text-foreground;
-    letter-spacing: -0.01em;
+    @apply text-foreground;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    line-height: 1.25;
   }
 
-  ::selection { background: hsl(var(--highlight) / 0.35); }
+  p { line-height: 1.8; }
+
+  ::selection { background: hsl(var(--peach) / 0.6); }
 }
 
 @layer components {
@@ -91,18 +112,22 @@
   .container-wide   { @apply mx-auto w-full max-w-7xl px-5 md:px-8; }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-xs md:text-sm font-semibold uppercase tracking-[0.18em] text-secondary;
+    @apply inline-flex items-center gap-2 text-xs md:text-sm uppercase tracking-[0.18em] text-secondary;
+    font-weight: 600;
   }
 
   .section-title {
-    @apply font-display text-3xl md:text-5xl font-bold leading-tight text-primary;
+    @apply text-3xl md:text-5xl leading-tight text-foreground;
+    font-weight: 700;
   }
 
   .lead {
-    @apply text-base md:text-lg text-muted-foreground leading-relaxed;
+    @apply text-base md:text-lg text-muted-foreground;
+    line-height: 1.85;
   }
 
   .placeholder-tag {
-    @apply inline-flex items-center gap-1.5 rounded-full bg-highlight/20 px-2.5 py-1 text-[11px] font-semibold text-foreground/70;
+    @apply inline-flex items-center gap-1.5 rounded-full bg-sand px-2.5 py-1 text-[11px] text-foreground/70;
+    font-weight: 600;
   }
 }
