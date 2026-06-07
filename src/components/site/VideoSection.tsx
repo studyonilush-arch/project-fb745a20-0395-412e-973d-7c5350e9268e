@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
+import posterAsset from "@/assets/video-poster.png.asset.json";
 
 const VIDEO_ID = "7NgyGN8g89g";
-const POSTER_URL = `https://img.youtube.com/vi/${VIDEO_ID}/0.jpg`;
+const POSTER_URL = posterAsset.url;
 
 const VideoSection = () => {
   const [active, setActive] = useState(false);
