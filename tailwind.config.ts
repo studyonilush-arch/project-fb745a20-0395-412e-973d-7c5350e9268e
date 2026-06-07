@@ -13,7 +13,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Assistant', 'system-ui', 'sans-serif'],
-        display: ['"Frank Ruhl Libre"', 'Georgia', 'serif'],
+        display: ['Assistant', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -47,6 +47,14 @@ export default {
           DEFAULT: "hsl(var(--highlight))",
           foreground: "hsl(var(--highlight-foreground))",
         },
+        cream: "hsl(var(--cream))",
+        sand: "hsl(var(--sand))",
+        peach: "hsl(var(--peach))",
+        clay: "hsl(var(--clay))",
+        sage: "hsl(var(--sage))",
+        olive: "hsl(var(--olive))",
+        "sky-soft": "hsl(var(--sky-soft))",
+        "sky-pale": "hsl(var(--sky-pale))",
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -70,6 +78,7 @@ export default {
         'gradient-warm': 'var(--gradient-warm)',
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-cta': 'var(--gradient-cta)',
+        'gradient-calm': 'var(--gradient-calm)',
       },
       boxShadow: {
         soft: 'var(--shadow-soft)',

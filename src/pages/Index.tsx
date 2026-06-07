@@ -11,6 +11,7 @@ import { toast } from "sonner";
 import heroImage from "@/assets/hero.jpg";
 import { ImagePlaceholder } from "@/components/site/Placeholder";
 import SectionTitle from "@/components/site/SectionTitle";
+import VideoSection from "@/components/site/VideoSection";
 
 const spaces = [
   { icon: Music, title: "חדר מוזיקה", desc: "מקום לחיפוש, הקשבה וביטוי דרך נגינה, שירה ויצירה." },
@@ -129,6 +130,10 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* VIDEO */}
+      <VideoSection />
+
 
       {/* WHAT'S HAPPENING */}
       <section className="bg-muted/60 py-20 md:py-24">

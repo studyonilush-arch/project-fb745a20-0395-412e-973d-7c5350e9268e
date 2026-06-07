@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Menu, X, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Logo from "@/components/site/Logo";
 
 const navItems = [
   { to: "/", label: "עמוד הבית" },
@@ -22,15 +23,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="container-wide flex h-16 items-center justify-between gap-4 md:h-20">
-        <Link to="/" className="flex items-center gap-3" aria-label="תיכון מל''ד - דף הבית">
-          <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-cta text-primary-foreground font-display text-lg font-bold shadow-soft">
-            מל״ד
-          </span>
-          <span className="hidden flex-col leading-tight md:flex">
-            <span className="font-display text-lg font-bold text-primary">תיכון מל״ד</span>
-            <span className="text-xs text-muted-foreground">בית ספר שהוא בית · ירושלים</span>
-          </span>
-        </Link>
+        <Logo />
 
         <nav className="hidden xl:flex items-center gap-1">
           {navItems.map((item) => (
@@ -50,10 +43,10 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button asChild variant="outline" size="sm" className="hidden md:inline-flex border-highlight text-foreground hover:bg-highlight/20">
-            <Link to="/donations"><Heart className="ml-1 h-4 w-4" /> תרומות</Link>
+          <Button asChild variant="outline" size="sm" className="hidden md:inline-flex border-clay/40 text-foreground hover:bg-peach/40">
+            <Link to="/donations"><Heart className="ml-1 h-4 w-4 text-highlight" fill="currentColor" /> תרומות</Link>
           </Button>
-          <Button asChild size="sm" className="hidden md:inline-flex bg-gradient-cta text-primary-foreground shadow-soft hover:opacity-95">
+          <Button asChild size="sm" className="hidden md:inline-flex bg-primary text-primary-foreground shadow-soft hover:bg-primary/90">
             <Link to="/contact">לטופס הרשמה</Link>
           </Button>
           <button
