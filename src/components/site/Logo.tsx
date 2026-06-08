@@ -1,30 +1,14 @@
-import { Heart } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoAsset from "@/assets/mald-logo.png.asset.json";
 
-interface LogoProps {
-  variant?: "default" | "onPrimary";
-}
-
-const Logo = ({ variant = "default" }: LogoProps) => {
-  const textColor = variant === "onPrimary" ? "text-primary-foreground" : "text-foreground";
-  const subColor = variant === "onPrimary" ? "text-primary-foreground/70" : "text-muted-foreground";
-  const bg = variant === "onPrimary" ? "bg-primary-foreground/10" : "bg-cream";
-
+const Logo = () => {
   return (
     <Link to="/" className="flex items-center gap-3" aria-label="תיכון מל״ד - דף הבית">
-      <span className={`relative flex h-12 w-12 items-center justify-center rounded-full ${bg} shadow-soft`}>
-        <span className={`text-lg font-bold ${textColor}`}>מל״ד</span>
-        <Heart
-          className="absolute -top-1 -left-1 h-4 w-4"
-          fill="#E81820"
-          stroke="#E81820"
-          aria-hidden
-        />
-      </span>
-      <span className="flex flex-col leading-tight">
-        <span className={`text-base md:text-lg font-bold ${textColor}`}>תיכון מל״ד</span>
-        <span className={`text-[11px] md:text-xs ${subColor}`}>בית ספר שהוא בית · ירושלים</span>
-      </span>
+      <img
+        src={logoAsset.url}
+        alt="לוגו תיכון מל״ד"
+        className="h-10 w-auto md:h-12"
+      />
     </Link>
   );
 };
