@@ -43,9 +43,9 @@ const Footer = () => (
       <div>
         <h3 className="mb-3 font-display text-base font-semibold">צרו קשר</h3>
         <ul className="space-y-3 text-sm text-primary-foreground/80">
-          <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-highlight" /> ירושלים</li>
+          <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-highlight" /> זלמן ארן 7, ירושלים</li>
           <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-highlight" /> טלפון יתעדכן בקרוב</li>
-          <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-highlight" /> info@malad.example</li>
+          <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-highlight" /> <a href="mailto:meledschool@gmail.com" className="hover:text-highlight">meledschool@gmail.com</a></li>
         </ul>
       </div>
     </div>
