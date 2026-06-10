@@ -277,22 +277,24 @@ const Index = () => {
         <div className="container-wide">
           <SectionTitle
             eyebrow="הצוות שלנו"
-            title="הצוות שמלווה את הדרך"
-            description="במל״ד הקשר האישי הוא חלק מהלמידה. התלמידים פוגשים צוות שמכיר אותם, מאמין בהם ומלווה אותם מקרוב."
+            title="אנשים שמלווים, רואים ומחזיקים"
+            description="צוות מל״ד הוא לא רק רשימת תפקידים - אלה האנשים שמכירים כל תלמיד בשמו, מקשיבים, מאמינים ויודעים מתי להחזיק חזק ומתי להניח בעדינות."
           />
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              { name: "אודיה ואן לואן", role: "יועצת בית הספר" },
-              { name: "בת שבע", role: "מחנכת י\"א בנות והוראה מתקנת" },
-            ].map((person) => (
-              <div key={person.name} className="rounded-3xl border border-border bg-card p-6 text-center shadow-soft transition-smooth hover:shadow-card">
-                <div className="mx-auto h-28 w-28 overflow-hidden rounded-full">
-                  <ImagePlaceholder ratio="square" label={person.name} className="!aspect-square" />
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {["מנהל בית הספר", "יועצת חינוכית", "עובדת סוציאלית", "רכזת פדגוגית"].map((role) => (
+              <div key={role} className="rounded-2xl border border-border bg-card p-5 text-center shadow-soft">
+                <div className="mx-auto h-20 w-20 overflow-hidden rounded-full">
+                  <ImagePlaceholder ratio="square" label="תמונה" className="!aspect-square" />
                 </div>
-                <h3 className="mt-5 font-display text-lg font-bold text-primary">{person.name}</h3>
-                <p className="mt-1.5 text-sm text-muted-foreground">{person.role}</p>
+                <h3 className="mt-4 font-display text-base font-bold text-primary">{role}</h3>
+                <p className="mt-1 text-xs text-muted-foreground">שם ופרטים יתעדכנו</p>
               </div>
             ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary-soft">
+              <Link to="/team">הכירו את הצוות שלנו</Link>
+            </Button>
           </div>
         </div>
       </section>
