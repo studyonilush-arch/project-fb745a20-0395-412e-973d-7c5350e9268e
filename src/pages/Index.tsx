@@ -68,11 +68,12 @@ const Index = () => {
               <span className="text-secondary">בית ספר שהוא בית</span>
             </h1>
             <p className="mt-5 font-display text-xl text-foreground/80 md:text-2xl">
-              אצלנו הכדור בידיים שלך.
+              מקום של למידה, קשר אישי והתחלה חדשה בירושלים.
             </p>
             <p className="lead mt-5 max-w-xl">
-              מרכז למידה דתי בירושלים שמציע לנערים ונערות התחלה חדשה, מתוך
-              קשר אישי, בחירה, אמון ולמידה שמותאמת באמת.
+              מרכז למידה דתי לנערים ונערות שמחפשים מקום אחר — עם קשר אישי,
+              אמון אמיתי ולמידה בקצב שמתאים להם. כאן כל אחד מרגיש שייך,
+              ומתחיל להאמין שיש בו יכולת.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg" className="bg-gradient-cta text-primary-foreground shadow-card hover:opacity-95">
@@ -139,7 +140,7 @@ const Index = () => {
       <section className="bg-muted/60 py-20 md:py-24">
         <div className="container-wide">
           <div className="flex flex-wrap items-end justify-between gap-6">
-            <SectionTitle eyebrow="מה קורה פה?" title="החיים בבית הספר, באמת" description="אירועים, פרויקטים, מסעות וחיי יום־יום - לא קמפיין שיווקי, אלא הקצב האמיתי של הבית." />
+            <SectionTitle eyebrow="מה קורה פה?" title="החיים בבית הספר, באמת" description="רגעים אמיתיים של למידה, יצירה, מסעות וחיי יום־יום — הקצב של הבית כפי שהוא." />
             <Button asChild variant="ghost" className="text-primary hover:bg-primary-soft">
               <Link to="/whats-happening">לכל העדכונים <ArrowLeft className="mr-1 h-4 w-4" /></Link>
             </Button>
@@ -248,7 +249,7 @@ const Index = () => {
         <SectionTitle
           eyebrow="לומדים אחרת"
           title="אנחנו לומדים אחרת — מתוך קשר, אמון והזדמנות"
-          description="לא רק 'מאפשרים'. אנחנו בונים יחד עם כל תלמיד תוכנית אישית שמחזירה את היכולת ללמוד."
+          description="בונים יחד עם כל תלמיד תוכנית אישית שמחזירה את היכולת ללמוד — בקצב שלו, עם מי שמאמין בו."
         />
         <div className="mt-12 grid gap-5 sm:grid-cols-2">
           {learning.map((l) => (
