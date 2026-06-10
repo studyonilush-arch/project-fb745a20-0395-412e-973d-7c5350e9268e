@@ -177,6 +177,43 @@ const Index = () => {
         </div>
       </section>
 
+      {/* YEAR-ROUND LIFE */}
+      <section className="bg-gradient-warm py-20 md:py-24">
+        <div className="container-wide">
+          <SectionTitle
+            eyebrow="הווי מל״ד"
+            title={"הווי מל״ד לאורך השנה"}
+            description={"במל״ד השנה מלאה ברגעים של למידה, שיח, יצירה, התנדבות, טיולים וחוויות משותפות. אלו הרגעים שבונים שייכות, אמון ותחושת מסוגלות."}
+          />
+          <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+            {[
+              { caption: "רגעים של ריכוז — למידה", ratio: "portrait" as const },
+              { caption: "פורום סופשבוע — שיח קבוצתי", ratio: "square" as const },
+              { caption: "חדר אמנות — יצירה", ratio: "square" as const },
+              { caption: "חדר מוזיקה — ביטוי", ratio: "portrait" as const },
+              { caption: "אורזים מזון למשפחות לקראת החגים", ratio: "square" as const },
+              { caption: "ט״ו בשבט — חגים ומסורת", ratio: "portrait" as const },
+              { caption: "סיור בעיר העתיקה — ירושלים", ratio: "portrait" as const },
+              { caption: "מסע ישראלי — צילום קבוצתי", ratio: "square" as const },
+              { caption: "עושים ספורט — פעילות לא פורמלית", ratio: "square" as const },
+              { caption: "מבשלים יחד — ארוחה משותפת", ratio: "portrait" as const },
+              { caption: "כותבים עבודות בפרגולה", ratio: "portrait" as const },
+              { caption: "יום כיף סופשנה — קייקים", ratio: "square" as const },
+            ].map((item) => (
+              <figure key={item.caption} className="space-y-2">
+                <ImagePlaceholder ratio={item.ratio} label={item.caption} />
+                <figcaption className="px-1 text-xs leading-relaxed text-foreground/75">
+                  {item.caption}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <p className="mt-8 text-center text-xs text-muted-foreground">
+            התמונות יוחלפו בתמונות אמיתיות מתוך אוסף ״תמונות וסרטונים אתר מל״ד״.
+          </p>
+        </div>
+      </section>
+
       {/* SPACES */}
       <section className="bg-gradient-warm py-20 md:py-28">
         <div className="container-wide">
