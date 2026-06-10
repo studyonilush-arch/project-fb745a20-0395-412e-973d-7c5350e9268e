@@ -68,11 +68,12 @@ const Index = () => {
               <span className="text-secondary">בית ספר שהוא בית</span>
             </h1>
             <p className="mt-5 font-display text-xl text-foreground/80 md:text-2xl">
-              אצלנו הכדור בידיים שלך.
+              מקום של למידה, קשר אישי והתחלה חדשה בירושלים.
             </p>
             <p className="lead mt-5 max-w-xl">
-              מרכז למידה דתי בירושלים שמציע לנערים ונערות התחלה חדשה, מתוך
-              קשר אישי, בחירה, אמון ולמידה שמותאמת באמת.
+              מרכז למידה דתי לנערים ונערות שמחפשים מקום אחר — עם קשר אישי,
+              אמון אמיתי ולמידה בקצב שמתאים להם. כאן כל אחד מרגיש שייך,
+              ומתחיל להאמין שיש בו יכולת.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg" className="bg-gradient-cta text-primary-foreground shadow-card hover:opacity-95">
