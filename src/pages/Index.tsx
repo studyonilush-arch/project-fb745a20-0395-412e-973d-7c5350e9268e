@@ -184,22 +184,18 @@ const Index = () => {
           <SectionTitle
             eyebrow="הווי מל״ד"
             title={"הווי מל״ד לאורך השנה"}
-            description={"במל״ד השנה מלאה ברגעים של למידה, שיח, יצירה, התנדבות, טיולים וחוויות משותפות. אלו הרגעים שבונים שייכות, אמון ותחושת מסוגלות."}
+            description={"לאורך השנה מל״ד הוא הרבה יותר ממערכת שעות. זה מקום של למידה, שיחה, יצירה, התנדבות, טיולים ורגעים קטנים שבונים שייכות ואמון."}
           />
           <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
             {[
-              { caption: "רגעים של ריכוז — למידה", ratio: "portrait" as const },
-              { caption: "פורום סופשבוע — שיח קבוצתי", ratio: "square" as const },
-              { caption: "חדר אמנות — יצירה", ratio: "square" as const },
-              { caption: "חדר מוזיקה — ביטוי", ratio: "portrait" as const },
-              { caption: "אורזים מזון למשפחות לקראת החגים", ratio: "square" as const },
-              { caption: "ט״ו בשבט — חגים ומסורת", ratio: "portrait" as const },
-              { caption: "סיור בעיר העתיקה — ירושלים", ratio: "portrait" as const },
-              { caption: "מסע ישראלי — צילום קבוצתי", ratio: "square" as const },
-              { caption: "עושים ספורט — פעילות לא פורמלית", ratio: "square" as const },
-              { caption: "מבשלים יחד — ארוחה משותפת", ratio: "portrait" as const },
-              { caption: "כותבים עבודות בפרגולה", ratio: "portrait" as const },
-              { caption: "יום כיף סופשנה — קייקים", ratio: "square" as const },
+              { caption: "למידה בקצב אישי", ratio: "portrait" as const },
+              { caption: "שיח וקבוצה", ratio: "square" as const },
+              { caption: "יצירה וביטוי אישי", ratio: "square" as const },
+              { caption: "התנדבות ועשייה חברתית", ratio: "portrait" as const },
+              { caption: "חגים ורגעי שייכות", ratio: "square" as const },
+              { caption: "ירושלים, טיולים ומסעות", ratio: "portrait" as const },
+              { caption: "ספורט ופעילות משותפת", ratio: "square" as const },
+              { caption: "סוף שנה וחוויות משותפות", ratio: "portrait" as const },
             ].map((item) => (
               <figure key={item.caption} className="space-y-2">
                 <ImagePlaceholder ratio={item.ratio} label={item.caption} />
