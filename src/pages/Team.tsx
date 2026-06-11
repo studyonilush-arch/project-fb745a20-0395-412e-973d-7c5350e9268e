@@ -24,11 +24,11 @@ const Team = () => (
     />
     <section className="container-wide py-16">
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        {roles.map((role) => (
-          <div key={role} className="rounded-2xl border border-border bg-card p-5 text-center shadow-soft">
+        {team.map((member) => (
+          <div key={member.role} className="rounded-2xl border border-border bg-card p-5 text-center shadow-soft">
             <ImagePlaceholder ratio="square" label="תמונת איש צוות" />
-            <h3 className="mt-4 font-display text-base font-bold text-primary">{role}</h3>
-            <p className="mt-1 text-xs text-muted-foreground">שם ופרטים יתעדכנו</p>
+            <h3 className="mt-4 font-display text-base font-bold text-primary">{member.role}</h3>
+            <p className="mt-1 text-xs text-muted-foreground">{member.name ?? "שם ופרטים יתעדכנו"}</p>
           </div>
         ))}
       </div>
